@@ -16,6 +16,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://datatrans.jfrog.io/artifactory/mobile-sdk/") }
     }
 }
 
