@@ -56,7 +56,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.adyen.dropIn)
+    implementation(libs.adyen.dropIn) {
+        exclude("com.adyen.checkout", "twint")
+    }
     implementation(libs.datatrans.sdk)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
