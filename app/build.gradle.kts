@@ -57,9 +57,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.adyen.dropIn)
-    implementation(libs.datatrans.sdk) {
-        exclude("ch.twint.payment", "twint-sdk-android")
-    }
+    implementation(libs.datatrans.sdk)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
